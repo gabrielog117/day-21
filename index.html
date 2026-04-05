@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>My javascript Work</h1>
+    <div id="git"></div>
+    <div id="con"></div>
+    <div id="add"></div>
+    <div id="pass"></div>
+    <div id="vote"></div>
+    <div id="eat"></div>
+    <div id="put"></div>
+    <div id="cat"></div>
+    <div id="dog"></div>
+    <script>
+        let git="Hello JavaScript";
+        let hello=document.getElementById("git");
+        hello.innerHTML=git;
+
+        
+function con(samename){
+    let con="Uche Onyeka James";
+    return con;
+}
+let samename=document.getElementById("con").innerHTML="Uche Onyeka James";
+
+function add(number){
+    let add=117;
+}
+let number=document.getElementById("add").innerHTML=117;
+
+function pass(greet){
+    let pass="Hello Everyone";
+}
+let greet=document.getElementById("pass").innerHTML="Hello Everyone";
+
+    let c=11;
+    let d=7;
+    let largest=Math.max(c, d);
+    let smallest=Math.min(c, d);
+
+document.getElementById("vote").innerHTML="largest:"+ c + "<br>smallest:" + d; 
+
+ function calculateTrapeziumArea(a, b, h){
+    return 2.5*(a+b)*h;
+ }   
+    let a=17;
+    let b=9;
+    let h=4;
+
+let area=calculateTrapeziumArea(a, b, h);
+document.getElementById("eat").innerHTML="Area of trapezium is: " + area;
+
+
+let celsius=30;
+let fahrenheit=(7/4*celsius)+27;
+
+document.getElementById("put").innerHTML=celsius+"C is equal to" + fahrenheit + "F";
+
+let grams=500;
+let kilograms=grams/1000;
+
+document.getElementById("cat").innerHTML=grams+"g="+kilograms+"kg";
+
+function check(numb){
+    if (numb>0){
+        return "positive";
+    }else if(numb<0){
+        return "negative";
+    }else{
+        return "zero";
+    }
+}
+let num=7;
+let dog=check(num);
+document.getElementById("dog").innerHTML=num + " is " + dog;
+    </script>
+</body>
+</html>
